@@ -8,7 +8,7 @@ const Registro = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://3.145.101.190/api/registro', {
+    const response = await fetch('https://3.145.101.190/api/registro', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

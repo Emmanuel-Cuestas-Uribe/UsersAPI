@@ -11,7 +11,7 @@ const Usuarios = () => {
 
   const fetchUsuarios = async () => {
     try {
-      const response = await fetch('http://3.145.101.190/api/usuarios', {
+      const response = await fetch('https://3.145.101.190/api/usuarios', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -32,7 +32,7 @@ const Usuarios = () => {
     const confirm = window.confirm('¿Estás seguro de que deseas eliminar este usuario?');
     if (confirm) {
       try {
-        const response = await fetch(`http://3.145.101.190/api/usuario/${id}`, {
+        const response = await fetch(`https://3.145.101.190/api/usuario/${id}`, {
             method: 'DELETE',
             headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`,
